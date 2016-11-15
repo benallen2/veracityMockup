@@ -1,0 +1,204 @@
+body{
+  background: #00ACC1;
+  height: 100%;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+span{
+  color: #00ACC1;
+}
+
+.pagewrap{
+  background: url("./veracityhero.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+}
+.hero{
+  height: 100vh;
+}
+.backdrop{
+  height: 100vh;
+  padding: 0;
+  background: url("./pxbg.png");
+  background-repeat: repeat;
+  background-color: rgba(15, 17, 19, 0.6);
+}
+.main{
+  z-index: 600;
+  font-size: 30px;
+  height: 100vh;
+}
+.mainTitle{
+  margin-top: 30vh;
+  font-family: 'Fugaz One', cursive;
+  font-size: 62px;
+}
+
+.titleFooter{
+  font-size: 18px;
+}
+
+@media (min-width: 1360px) {
+  .mainTitle {
+    font-size: 96px;
+  }
+  .titleFooter {
+    font-size: 24px;
+  }
+}
+
+.kicker {
+  font-size: 38px;
+  margin: 0 auto 20px;
+}
+
+.spacer{
+  height:1px;
+  content:"";
+  width: 130px;
+  background-color: #005366;
+  margin: 0 auto 20px;
+}
+
+.bottomkicker{
+  position: absolute;
+  bottom: 10px;
+  color: #ff7400;
+
+}
+
+h6{
+  font-size: 20px;
+}
+i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/*Navbar CSS start */
+.sidenav{
+  text-align: center;
+  position: fixed;
+  display: inline-block;
+  background-color: #3A3838;
+  height: 100vh;
+  color: #AFAFAF;
+  padding: 0;
+  z-index: 900;
+}
+
+.brand {
+  text-align: center;
+  border: solid 4px #00ACC1;
+  border-radius: 50%;
+  height: 78px;
+  width: 78px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  background-color: #3c3c3c;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#navLogo {
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+.navLinks {
+  margin: 40px auto 0px;
+  list-style: none;
+  padding: 0;
+  width: 95%;
+}
+
+.navLinks > li {
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.link:before{
+  content: "";
+  height:3px;
+  width: 0px;
+  background: #ff7400;
+  display: block;
+  transition: all ease .4s;
+  bottom: -1px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.link::after {
+  content: "";
+  height: 1px;
+  width: 50%;
+  background: #AFAFAF;
+  display: block;
+  margin: 7% auto;
+  transition: border .5s ease;
+}
+.link:hover:before{
+  width: 50%;
+}
+
+.socialMedia > i{
+  margin-top: 15px;
+  padding: 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  transition: all ease 1s;
+  color: #3b5998;
+}
+.fa-twitter:hover{
+  transition: all ease 1s;
+  color: #4099FF;
+}
+.navDots{
+  float: right;
+  margin-top: 25vh;
+  margin-right: 30px;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  border: solid 2px #FFF;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  transition: background .4s ease;
+  cursor: pointer;
+}
+
+.dot:hover{
+  background: #fff;
+}
+
+.activeDot{
+  height: 13px;
+  width: 13px;
+  border: solid 2px #FF7400;
+  border-radius: 50%;
+  background: #FF7400;
+}
+.contactImg > img{
+  max-width: 150px;
+  max-height: 150px;
+  float: right;
+  transition: all ease 0.8s;
+  cursor: pointer;
+}
+
+.rightNav > .row {
+  padding: 0;
+}
